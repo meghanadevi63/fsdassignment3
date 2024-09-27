@@ -1,0 +1,54 @@
+@media(min-width:1000px){
+.container{
+    display: grid;
+    grid-template-areas: "header header header"
+    "fea1 fea2 fea3"
+    "signup  signup signup"
+    "content content content"
+}
+}
+@media((min-width:500px) and (max-width:999px))
+{
+    .container{
+        display: grid;
+        grid-template-areas: "header header"
+        "content content"
+        "signup fea1"
+        "fea2 fea3"
+}
+}
+@media(max-width:499px){
+    .container{
+        display:grid;
+        grid-template-areas: "header"
+        "content"
+        "signup"
+        "fea1"
+        "fea2"
+        "fea3";
+    }
+}
+#id1{
+    grid-area: header;
+    background-color: aquamarine;
+}
+#id2{
+    grid-area:fea1;
+    background-color:yellow;
+}
+#id3{
+    grid-area:fea2;
+    background-color:purple;
+}
+#id4{
+    grid-area:fea3;
+    background-color: palevioletred;
+}
+#id5{
+    grid-area:signup;
+    background-color: aquamarine;
+}
+#id6{
+    grid-area:content;
+    background-color: lightcyan;
+}
